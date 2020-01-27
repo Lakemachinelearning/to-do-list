@@ -5,9 +5,12 @@ React.js + Node.js + MySQL
 FULLSTACK To-do List
 
 NODE.JS start
- node index.js
+
+node index.js
 
 
 REACT.JS start
-  cd todoapp
-  npm start
+  
+cd todoapp
+
+npm start
