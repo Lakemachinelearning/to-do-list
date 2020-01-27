@@ -1,2 +1,2 @@
-# to-do-list
-React.js To-Do List
+# To-do-list
+React.js + Node.js + MySQL FULLSTACK TODO List
