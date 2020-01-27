@@ -5,10 +5,18 @@ import AddTodo from './AddForm';
 
 class App extends Component {
   state = {
-    todos: [
-      {id: 1, content: 'buy some milk'},
-      {id: 2, content: 'play mario kart'}
-    ]
+    todos: []
+  }
+
+  componentDidMount() {
+    this.getTodos();
+  }
+
+  getTodos = () => {
+    fetch('http://localhost:4000/todos')
+      .then(response => response.json())
+      .then(response => this.setState({ todos: response.data}))
+      .catch(err => console.error(err))
   }
   deleteTodo = (id) => {
     const todos = this.state.todos.filter(todo => {
